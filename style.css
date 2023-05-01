@@ -82,7 +82,7 @@ body{
 
 }
 
-#todo-list :hover{
+#todo-list li:hover{
     background-color: var(--color-dark3);
     transition: .4s;
     border-radius: 1rem;
@@ -105,6 +105,6 @@ body{
 }
 
 
-#btn-ok :hover{
+#btn-ok:hover{
     background-color: var(--color-green2);
 }
