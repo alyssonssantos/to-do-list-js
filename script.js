@@ -9,6 +9,18 @@ function validateExistingTask(){
 
 }
 
+
+//add event listener to insert new task when enter is pressed
+const input = document.getElementById('input-new-task');
+
+input.addEventListener('keydown', function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    newTask();
+  }
+});
+
+
 function newTask(){
     let input = document.getElementById('input-new-task')
     input.style.border = ''
@@ -34,6 +46,10 @@ function newTask(){
     input.value = ''
     
 }
+
+
+//Add new task when enter is pressed //
+
 
 
 function showValues(){
