@@ -1,5 +1,5 @@
 :root{
-    --color-dark: rgb(14, 14, 14);
+    --color-dark: rgba(14, 14, 14, 0.678);
     --color-dark2: rgb(32, 32, 32);
     --color-dark3: rgb(22, 22, 22);
     --color-dark4: rgb(61, 61, 61);
@@ -13,7 +13,9 @@
 
 body{
     font-family: 'Lato';
-    background-color: var(--color-dark);
+    background-image: url(./assets/background.jpg);
+    background-size: cover;
+    background-size: center;
     color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -22,9 +24,12 @@ body{
 }
 
 .content{
+    background-color: var(--color-dark);
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
 
 }
 
@@ -49,8 +54,10 @@ body{
     border-radius: 1rem;
 }
 
+
+
 #btn-new-task{
-    background-color: var(--color-dark2);
+    background-color: var(--color-dark3);
     color: var(--color-white);
     border-radius: 50%;
     width: 50px;
